@@ -3,6 +3,9 @@
 	<info>
 		<name>Three Halflings in a Trenchcoat</name>
 		<description>HOMEBREW three halflings in a trenchcoat fighter archetype</description>
+		<update version="0.0.1">
+			<file name="fighter-thiat.xml" url="https://raw.githubusercontent.com/aurora_homebrew/fighter-thiat.xml" />
+		</update>
 	</info>
 
 	<element name="Three Halflings in a Trenchcoat" type="Archetype" source="HOMEBREW" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FIGHTER_TRENCHCOAT">
