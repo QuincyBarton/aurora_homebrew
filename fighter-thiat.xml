@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Three Halflings in a Trenchcoat</name>
+		<description>HOMEBREW three halflings in a trenchcoat fighter archetype</description>
+	</info>
+
+	<element name="Three Halflings in a Trenchcoat" type="Archetype" source="HOMEBREW" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FIGHTER_TRENCHCOAT">
+		<supports>Martial Archetype</supports>
+		<description>
+			<p>These three halflings are fucking tired of tall people giving them shit. Looked down upon by the commonfolk, they've decided to blend in with the crowds in order to stab anyone whos taller than them, or something...</p>
+			<div element="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_BONUS_PROFICIENCY" />
+			<div element="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_THE_PRICE_OF_POWER" />
+			<div element="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_SIX_ARMS" />
+			<div element="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_MULTIFORM_TECHNIQUE" />
+			<div element="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_UNDER_THAT_COAT" />
+			<div element="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_UNCANNY_VALLEY" />
+			<div element="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_VIGILANT_DEFENDER" />
+		</description>
+		<sheet display="false">
+			<description>The archetypal THINAT excels at mounted combat.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_BONUS_PROFICIENCY" level="1" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_THE_PRICE_OF_POWER" level="1" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_SIX_ARMS" level="1" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_MULTIFORM_TECHNIQUE" level="7" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_UNDER_THAT_COAT" level="10" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_UNCANNY_VALLEY" level="15" />
+			<grant type="Archetype Feature" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_THE_ONE_THEY_CALL_STEVE" level="18" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiency" type="Archetype Feature" source="HOMEBREW" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_BONUS_PROFICIENCY">
+		<description>
+			<p>When you choose this archetype at 1st level, you gain proficiency in one of the following skills of your choice: Insight, Performance, or Persuasion. Alternatively, you learn one language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Bonus Proficiency (THINAT)" supports="ID_HOMEBREW_QUINCY_FIGHTER_THINAT_PROFICIENCY|ID_HOMEBREW_QUINCY_FIGHTER_THINAT_LANGUAGE" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiency (Proficiency)" type="Archetype Feature" source="HOMEBREW" id="ID_HOMEBREW_QUINCY_FIGHTER_THINAT_PROFICIENCY">
+		<compendium display="false" />
+		<description>
+			<p>You gain proficiency in one of the following skills of your choice: Insight, Performance, or Persuasion.</p>
+			<div class="reference">
+				<div element="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_BONUS_PROFICIENCY" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Bonus Proficiency (THINAT)" supports="ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION" />
+		</rules>
+	</element>
+	<element name="Bonus Proficiency (Language)" type="Archetype Feature" source="HOMEBREW" id="ID_HOMEBREW_QUINCY_FIGHTER_THINAT_LANGUAGE">
+		<compendium display="false" />
+		<description>		
+			<p>You learn one language of your choice.</p>
+			<div class="reference">
+				<div element="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_BONUS_PROFICIENCY" />
+			</div>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Bonus Language (THINAT)" supports="Standard||Exotic" />
+		</rules>
+	</element>
+	<element name="The Price of Power" type="Archetype Feature" source="HOMEBREW" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_THE_PRICE_OF_POWER">
+		<description>
+			<p>Your dexterity is focused on keeping balance. have disadvantage on dex checks and saves. You have disadvantage on dex checks and saves. Your movement speed is decreased by five. Ranged attacks also have disadvantage. But hey, you'll be able to do so much stabbing.</p>
+		</description>
+		<sheet>
+			<description>You have disadvantage on dex checks and saves. Your movement speed is decreased by five. Ranged attacks also have disadvantage</description>
+		</sheet>
+	</element>
+	<element name="Power of Six Arms" type="Archetype Feature" source="HOMEBREW" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_SIX_ARMS">
+		<description>
+			<p>They say two heads are better than one, and six fists are certainly better than two.</p>
+		</description>
+		<sheet>
+			<description>Your fighter makes three attacks instead of one, one for each halfling. You can use action surge or haste with this feature as well (e.g. A level 5 TTF can make 6 attacks per turn, 12 with action surge).</description>
+		</sheet>
+	</element>
+	<element name="Multiform Technique" type="Archetype Feature" source="HOMEBREW" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_MULTIFORM_TECHNIQUE">
+		<description>
+			<p>Starting at the 7th level, at the start of your turn, you may choose to take a calculated risk to split up into three halflings and surround an attacker to make an attack. This feature can only be used if there are no hostile witnesses. You must resume your base form at the end of your turn. All attacks made against the target have advantage, and you do not suffer the price of power.</p>
+			<p class="indent">You can use this feature a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{constitution:modifier}}/Long Rest" action="Reaction">
+			<description>At the start of your turn, you may choose to split up into three halflings and surround an attacker to make an attack. This feature can only be used if there are no hostile witnesses. You must resume your base form at the end of your turn.
+
+All attacks made against the target have advantage, and you do not suffer the price of power.</description>
+		</sheet>
+	</element>
+	<element name="What's Under That Coat?" type="Archetype Feature" source="HOMEBREW" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_UNDER_THAT_COAT">
+		<description>
+			<p>Starting at the 10th level THERE CAN BE NO WITNESSESS. Upon using the multiform technique, you may cast darkness to shroud your attack. You can use this feature anywhere. Your secret is safe.</p>
+		</description>
+		<sheet>
+			<description> Upon using the multiform technique, you may cast darkness to shroud your attack. The darkness is dispelled once you return to the trenchcoat or die.</description>
+		</sheet>
+	</element>
+	<element name="Uncanny Valley" type="Archetype Feature" source="HOMEBREW" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_UNCANNY_VALLEY">
+		<description>
+			<p>At the 15th level, you have mastered the art of balancing three people in a trenchcoat. Your movements look almost real but not quite, causing a feeling of unease. You gain advantage on all intimidation checks to anyone who hasn't seen through your disguise.</p>
+		</description>
+		<sheet>
+			<description> You have advantage on all intimidation checks to anyone who hasn't seen through your disguise.</description>
+		</sheet>
+	</element>
+	<element name="The One They Call Steve" type="Archetype Feature" source="HOMEBREW" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_VIGILANT_DEFENDER">
+		<description>
+			<p>At the 18th level, you call upon a fourth halfling, Steve, to aid your journey. You are now four halflings in a trenchcoat. Where you would attack thee times, you now attack four. This continues to work with Action Surges / Haste etc. All other statistics (including HP, attunement etc. remain the same and are unaffected).</p>
+		</description>
+		<sheet>
+			<description> Steve shows up, allowing for four attacks instead of three</description>
+		</sheet>
+	</element>
+</elements>
