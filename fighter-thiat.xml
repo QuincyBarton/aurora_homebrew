@@ -97,10 +97,10 @@ All attacks made against the target have advantage, and you do not suffer the pr
 	</element>
 	<element name="What's Under That Coat?" type="Archetype Feature" source="HOMEBREW" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_UNDER_THAT_COAT">
 		<description>
-			<p>Starting at the 10th level THERE CAN BE NO WITNESSESS. Upon using the multiform technique, you may cast darkness to shroud your attack. You can use this feature anywhere. Your secret is safe.</p>
+			<p>Starting at the 10th level THERE CAN BE NO WITNESSESS. anyone witness foreign to the party is terrified. You can use this feature anywhere. Your secret is safe.</p>
 		</description>
 		<sheet>
-			<description> Upon using the multiform technique, you may cast darkness to shroud your attack. The darkness is dispelled once you return to the trenchcoat or die.</description>
+			<description> Upon using the multiform technique, anyone witness that is not in your party is terrified. They cannot reveal your secret. </description>
 		</sheet>
 	</element>
 	<element name="Uncanny Valley" type="Archetype Feature" source="HOMEBREW" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_UNCANNY_VALLEY">
