@@ -111,7 +111,7 @@ All attacks made against the target have advantage, and you do not suffer the pr
 			<description> You have advantage on all intimidation checks to anyone who hasn't seen through your disguise.</description>
 		</sheet>
 	</element>
-	<element name="The One They Call Steve" type="Archetype Feature" source="HOMEBREW" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_VIGILANT_DEFENDER">
+	<element name="The One They Call Steve" type="Archetype Feature" source="HOMEBREW" id="ID_HOMEBREW_QUINCY_ARCHETYPE_FEATURE_THINAT_THE_ONE_THEY_CALL_STEVE">
 		<description>
 			<p>At the 18th level, you call upon a fourth halfling, Steve, to aid your journey. You are now four halflings in a trenchcoat. Where you would attack thee times, you now attack four. This continues to work with Action Surges / Haste etc. All other statistics (including HP, attunement etc. remain the same and are unaffected).</p>
 		</description>
